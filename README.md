@@ -33,7 +33,7 @@ label.count(from: 0,
 从 0 到 100 的计数动画，持续时间是 5 秒钟，动画类型是渐 入效果，数据类型是 .Int 类型。字符串格式化就是在字符串有面加上 `／ 100` ，它颜色是亮灰色的。
 
 ``` swift
-    label.count(from: 0,
+label.count(from: 0,
                     to: 100,
                     duration: 5,
                     animationType: .EaseIn,
