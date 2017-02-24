@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ACLabelCounting" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zzp-mG-Se3" customClass="ACLabelCounting" customModule="ACLabelCounting" customModuleProvider="target">
+                                <rect key="frame" x="87" y="120" width="200" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="UYv-MN-wWf"/>
+                                    <constraint firstAttribute="height" constant="44" id="f7p-IR-puV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="szq-eJ-Y0x" userLabel="Start Button">
+                                <rect key="frame" x="148" y="264" width="80" height="44"/>
+                                <color key="backgroundColor" red="0.2392156869" green="0.67450982329999998" blue="0.96862745289999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="e0n-pZ-OlV"/>
+                                    <constraint firstAttribute="width" constant="80" id="ncb-rx-dx3"/>
+                                </constraints>
+                                <state key="normal" title="开始">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startButtonOnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7uX-6M-KvK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CCi-mn-4Vd">
+                                <rect key="frame" x="147" y="384" width="80" height="44"/>
+                                <color key="backgroundColor" red="0.2392156869" green="0.67450982329999998" blue="0.96862745289999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="停止">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="stopButtonOnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YVf-gK-C0x"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m4u-5Y-PIo" userLabel="Reset Button">
+                                <rect key="frame" x="147.5" y="444" width="80" height="44"/>
+                                <color key="backgroundColor" red="0.2392156869" green="0.67450982329999998" blue="0.96862745289999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="重置">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetButtonOnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kvy-hT-GRH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cft-OW-K7Q">
+                                <rect key="frame" x="146" y="324" width="80" height="44"/>
+                                <color key="backgroundColor" red="0.2392156869" green="0.67450982329999998" blue="0.96862745289999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="暂停">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pauseButtonOnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jur-BV-jFJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="CCi-mn-4Vd" firstAttribute="height" secondItem="cft-OW-K7Q" secondAttribute="height" id="0xf-j1-SQF"/>
+                            <constraint firstItem="zzp-mG-Se3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="2zZ-gB-lv9"/>
+                            <constraint firstItem="CCi-mn-4Vd" firstAttribute="top" secondItem="cft-OW-K7Q" secondAttribute="bottom" constant="16" id="5Ve-Sh-lJA"/>
+                            <constraint firstItem="m4u-5Y-PIo" firstAttribute="width" secondItem="cft-OW-K7Q" secondAttribute="width" id="8Bx-ku-zS5"/>
+                            <constraint firstItem="m4u-5Y-PIo" firstAttribute="height" secondItem="cft-OW-K7Q" secondAttribute="height" id="9mV-Xs-GX2"/>
+                            <constraint firstItem="szq-eJ-Y0x" firstAttribute="top" secondItem="zzp-mG-Se3" secondAttribute="bottom" constant="100" id="EVe-Uf-Ti8"/>
+                            <constraint firstItem="m4u-5Y-PIo" firstAttribute="top" secondItem="CCi-mn-4Vd" secondAttribute="bottom" constant="16" id="KIs-WJ-pBG"/>
+                            <constraint firstItem="szq-eJ-Y0x" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LYa-52-aeV"/>
+                            <constraint firstItem="CCi-mn-4Vd" firstAttribute="width" secondItem="cft-OW-K7Q" secondAttribute="width" id="MIU-1x-3pz"/>
+                            <constraint firstItem="zzp-mG-Se3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ceW-zS-9pe"/>
+                            <constraint firstItem="cft-OW-K7Q" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="146" id="fF7-QB-v43"/>
+                            <constraint firstItem="cft-OW-K7Q" firstAttribute="height" secondItem="szq-eJ-Y0x" secondAttribute="height" id="hbi-Gy-ua1"/>
+                            <constraint firstItem="m4u-5Y-PIo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iKR-F6-mJV"/>
+                            <constraint firstItem="CCi-mn-4Vd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="l1T-Uc-xby"/>
+                            <constraint firstItem="cft-OW-K7Q" firstAttribute="top" secondItem="szq-eJ-Y0x" secondAttribute="bottom" constant="16" id="nh4-Bw-RfN"/>
+                            <constraint firstItem="cft-OW-K7Q" firstAttribute="width" secondItem="szq-eJ-Y0x" secondAttribute="width" id="r7J-eQ-ohk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="zzp-mG-Se3" id="w5J-HA-wV9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
