@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1EF1B3DC21562EFF660699BA /* Pods_ACLabelCounting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EBA90430852DFB8516F15E1 /* Pods_ACLabelCounting.framework */; };
 		4C1DDA5E1F15AE5A00FF6904 /* ACLabelCounting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1DDA5D1F15AE5A00FF6904 /* ACLabelCounting.swift */; };
 		4C933C1D1E55452100E62F97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C933C1C1E55452100E62F97 /* AppDelegate.swift */; };
 		4C933C1F1E55452100E62F97 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C933C1E1E55452100E62F97 /* ViewController.swift */; };
@@ -15,6 +16,8 @@
 		4C933C271E55452100E62F97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C933C251E55452100E62F97 /* LaunchScreen.storyboard */; };
 		4C933C321E55452100E62F97 /* ACLabelCountingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C933C311E55452100E62F97 /* ACLabelCountingTests.swift */; };
 		4C933C3D1E55452100E62F97 /* ACLabelCountingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C933C3C1E55452100E62F97 /* ACLabelCountingUITests.swift */; };
+		5BAEFBD23CE2E13AC89DB367 /* Pods_ACLabelCountingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B383EB86EE04B7B47D56578F /* Pods_ACLabelCountingUITests.framework */; };
+		793754EEEA339137481757C2 /* Pods_ACLabelCountingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AAED8F69877AB667771B55D /* Pods_ACLabelCountingTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1882069A1849720E8E9643DD /* Pods-ACLabelCounting.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACLabelCounting.release.xcconfig"; path = "Pods/Target Support Files/Pods-ACLabelCounting/Pods-ACLabelCounting.release.xcconfig"; sourceTree = "<group>"; };
+		2931C01014539CCFEEF3E36D /* Pods-ACLabelCountingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACLabelCountingUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ACLabelCountingUITests/Pods-ACLabelCountingUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2AAED8F69877AB667771B55D /* Pods_ACLabelCountingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ACLabelCountingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EBA90430852DFB8516F15E1 /* Pods_ACLabelCounting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ACLabelCounting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F565D5A14DB042F0E7A6C82 /* Pods-ACLabelCountingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACLabelCountingUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ACLabelCountingUITests/Pods-ACLabelCountingUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4C1DDA5D1F15AE5A00FF6904 /* ACLabelCounting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACLabelCounting.swift; sourceTree = "<group>"; };
 		4C933C191E55452100E62F97 /* ACLabelCounting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ACLabelCounting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C933C1C1E55452100E62F97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +57,10 @@
 		4C933C381E55452100E62F97 /* ACLabelCountingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ACLabelCountingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C933C3C1E55452100E62F97 /* ACLabelCountingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACLabelCountingUITests.swift; sourceTree = "<group>"; };
 		4C933C3E1E55452100E62F97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8852C8DDDB7203563141F4B6 /* Pods-ACLabelCounting.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACLabelCounting.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ACLabelCounting/Pods-ACLabelCounting.debug.xcconfig"; sourceTree = "<group>"; };
+		9FB9ED8997B5164DCC435673 /* Pods-ACLabelCountingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACLabelCountingTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ACLabelCountingTests/Pods-ACLabelCountingTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A448A4A4A37E7272F08A0451 /* Pods-ACLabelCountingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACLabelCountingTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ACLabelCountingTests/Pods-ACLabelCountingTests.release.xcconfig"; sourceTree = "<group>"; };
+		B383EB86EE04B7B47D56578F /* Pods_ACLabelCountingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ACLabelCountingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EF1B3DC21562EFF660699BA /* Pods_ACLabelCounting.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				793754EEEA339137481757C2 /* Pods_ACLabelCountingTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +84,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BAEFBD23CE2E13AC89DB367 /* Pods_ACLabelCountingUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00BD386423FC9A6DF9AF3F99 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8852C8DDDB7203563141F4B6 /* Pods-ACLabelCounting.debug.xcconfig */,
+				1882069A1849720E8E9643DD /* Pods-ACLabelCounting.release.xcconfig */,
+				9FB9ED8997B5164DCC435673 /* Pods-ACLabelCountingTests.debug.xcconfig */,
+				A448A4A4A37E7272F08A0451 /* Pods-ACLabelCountingTests.release.xcconfig */,
+				3F565D5A14DB042F0E7A6C82 /* Pods-ACLabelCountingUITests.debug.xcconfig */,
+				2931C01014539CCFEEF3E36D /* Pods-ACLabelCountingUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		4C1DDA5C1F15AE5A00FF6904 /* Source */ = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +119,8 @@
 				4C933C301E55452100E62F97 /* ACLabelCountingTests */,
 				4C933C3B1E55452100E62F97 /* ACLabelCountingUITests */,
 				4C933C1A1E55452100E62F97 /* Products */,
+				00BD386423FC9A6DF9AF3F99 /* Pods */,
+				933C8327C3D5D3423C5C2987 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -136,6 +166,16 @@
 			path = ACLabelCountingUITests;
 			sourceTree = "<group>";
 		};
+		933C8327C3D5D3423C5C2987 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2EBA90430852DFB8516F15E1 /* Pods_ACLabelCounting.framework */,
+				2AAED8F69877AB667771B55D /* Pods_ACLabelCountingTests.framework */,
+				B383EB86EE04B7B47D56578F /* Pods_ACLabelCountingUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,9 +183,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4C933C411E55452100E62F97 /* Build configuration list for PBXNativeTarget "ACLabelCounting" */;
 			buildPhases = (
+				66081D000F8050CE4F96CB7E /* [CP] Check Pods Manifest.lock */,
 				4C933C151E55452100E62F97 /* Sources */,
 				4C933C161E55452100E62F97 /* Frameworks */,
 				4C933C171E55452100E62F97 /* Resources */,
+				0562616AEAED8E4E7C5ECAD5 /* [CP] Embed Pods Frameworks */,
+				215B39BF632BB8A1F2342BF6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -160,9 +203,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4C933C441E55452100E62F97 /* Build configuration list for PBXNativeTarget "ACLabelCountingTests" */;
 			buildPhases = (
+				2984ACBE821868B1E102CD04 /* [CP] Check Pods Manifest.lock */,
 				4C933C291E55452100E62F97 /* Sources */,
 				4C933C2A1E55452100E62F97 /* Frameworks */,
 				4C933C2B1E55452100E62F97 /* Resources */,
+				9AA964E640DA634A5B3E87F6 /* [CP] Embed Pods Frameworks */,
+				1D4ED7A872EA115CC16720AC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -178,9 +224,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4C933C471E55452100E62F97 /* Build configuration list for PBXNativeTarget "ACLabelCountingUITests" */;
 			buildPhases = (
+				4FBF5CADD2CD26A48B68DF52 /* [CP] Check Pods Manifest.lock */,
 				4C933C341E55452100E62F97 /* Sources */,
 				4C933C351E55452100E62F97 /* Frameworks */,
 				4C933C361E55452100E62F97 /* Resources */,
+				1EF8BC52138B5D369B808473 /* [CP] Embed Pods Frameworks */,
+				26302E13A14FA48EC5355D68 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -267,6 +316,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0562616AEAED8E4E7C5ECAD5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ACLabelCounting/Pods-ACLabelCounting-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1D4ED7A872EA115CC16720AC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ACLabelCountingTests/Pods-ACLabelCountingTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1EF8BC52138B5D369B808473 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ACLabelCountingUITests/Pods-ACLabelCountingUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		215B39BF632BB8A1F2342BF6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ACLabelCounting/Pods-ACLabelCounting-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		26302E13A14FA48EC5355D68 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ACLabelCountingUITests/Pods-ACLabelCountingUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2984ACBE821868B1E102CD04 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4FBF5CADD2CD26A48B68DF52 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		66081D000F8050CE4F96CB7E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9AA964E640DA634A5B3E87F6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ACLabelCountingTests/Pods-ACLabelCountingTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4C933C151E55452100E62F97 /* Sources */ = {
@@ -425,6 +612,7 @@
 		};
 		4C933C421E55452100E62F97 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8852C8DDDB7203563141F4B6 /* Pods-ACLabelCounting.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = N364U2JVXK;
@@ -439,6 +627,7 @@
 		};
 		4C933C431E55452100E62F97 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1882069A1849720E8E9643DD /* Pods-ACLabelCounting.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = N364U2JVXK;
@@ -453,6 +642,7 @@
 		};
 		4C933C451E55452100E62F97 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FB9ED8997B5164DCC435673 /* Pods-ACLabelCountingTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -468,6 +658,7 @@
 		};
 		4C933C461E55452100E62F97 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A448A4A4A37E7272F08A0451 /* Pods-ACLabelCountingTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -483,6 +674,7 @@
 		};
 		4C933C481E55452100E62F97 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F565D5A14DB042F0E7A6C82 /* Pods-ACLabelCountingUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = N364U2JVXK;
@@ -497,6 +689,7 @@
 		};
 		4C933C491E55452100E62F97 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2931C01014539CCFEEF3E36D /* Pods-ACLabelCountingUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = N364U2JVXK;
