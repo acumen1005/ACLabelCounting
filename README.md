@@ -3,6 +3,16 @@ Adds animated counting to UILabel for swift
 
 ![](ACLabelCounting.gif)
 
+## Installation
+
+To integrate ACLabelCounting into your Xcode project using CocoaPods, specify it in your Podfile:
+
+```swift
+
+pod 'ACLabelCounting'
+
+```
+
 ## Usage
 初始化一个 ACLabelCounting 对象就可以直接调用 `count` 方法。
 普通的从 0 到 100 的计数动画，动画是线性的，数据类型是整数类型，没有格式化字符串。  

@@ -11,7 +11,9 @@ Pod::Spec.new do |s|
   s.name         = "ACLabelCounting"
   s.version      = "1.0.0"
   s.summary      = "Adds animated counting to UILabel for swift."
-  # s.description  = <<-DESC
+  s.description  = <<-DESC
+	a Label support animated counting for swift.
+		 DESC
 
   s.homepage     = "https://github.com/acumen1005/ACLabelCounting"
   # s.screenshots  = "https://www.github.com/acumen1005/ACLabelCounting/ACLabelCounting.gif"
@@ -21,7 +23,7 @@ Pod::Spec.new do |s|
   s.author             = { "acumen1005" => "407660109@qq.com" }
   s.ios.deployment_target = "8.0"
 
-  s.source       = { :git => "https://github.com/acumen1005/ACLabelCounting.git", :tag => s.version }
+  s.source       = { :git => "https://github.com/acumen1005/ACLabelCounting.git", :tag => "#{s.version}" }
   s.source_files  = "Source/*.swift"
 
 end
