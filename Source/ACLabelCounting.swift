@@ -83,7 +83,11 @@ class ACLabelCounting: UILabel {
     private func fireDisplayLink() {
         lastUpdate = Date.timeIntervalSinceReferenceDate
         displayLink = CADisplayLink(target: self, selector: #selector(updateNumber))
-        displayLink.preferredFramesPerSecond = LabelCountingConst.countRate
+        if #available(iOS 10, *) {
+            displayLink.preferredFramesPerSecond = LabelCountingConst.countRate
+        } else {
+            displayLink.frameInterval = LabelCountingConst.countRate / 35
+        }
         displayLink.add(to: RunLoop.main, forMode: .commonModes)
     }
     

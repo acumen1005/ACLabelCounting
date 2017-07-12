@@ -14,16 +14,14 @@ Pod::Spec.new do |s|
   # s.description  = <<-DESC
 
   s.homepage     = "https://github.com/acumen1005/ACLabelCounting"
-  s.screenshots  = "https://www.github.com/acumen1005/ACLabelCounting/ACLabelCounting.gif"
+  # s.screenshots  = "https://www.github.com/acumen1005/ACLabelCounting/ACLabelCounting.gif"
  
-  s.license	 = "MIT"
+  s.license	 = { :type => "MIT", :file => "LICENSE" }
 
   s.author             = { "acumen1005" => "407660109@qq.com" }
   s.ios.deployment_target = "8.0"
 
   s.source       = { :git => "https://github.com/acumen1005/ACLabelCounting.git", :tag => s.version }
   s.source_files  = "Source/*.swift"
- 
-  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '3.0' }
 
 end
