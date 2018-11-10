@@ -18,30 +18,30 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        label.count(from: 0,
-                    to: 100,
-                    duration: 5,
-                    animationType: .EaseIn,
-                    dataType: .Double) { txt in
-                return "\(txt) %"
-        }
-        
-        
 //        label.count(from: 0,
 //                    to: 100,
 //                    duration: 5,
 //                    animationType: .EaseIn,
-//                    dataType: .Int) { text -> NSAttributedString in
-//                        let appandString = " / 100"
-//                        let string = "\(text)\(appandString)"
-//                        let range = (string as NSString).range(of: appandString)
-//                        
-//                        let attributedString = NSMutableAttributedString(string: string)
-//                        attributedString.addAttribute(NSForegroundColorAttributeName,
-//                                                      value: UIColor.lightGray,
-//                                                      range: range)
-//                        return attributedString;
+//                    dataType: .Double) { txt in
+//                return "\(txt) %"
 //        }
+      
+        
+        label.count(from: 0,
+                    to: 100,
+                    duration: 5,
+                    animationType: .EaseIn,
+                    dataType: .Int) { text -> NSAttributedString in
+                        let appandString = " / 100"
+                        let string = "\(text)\(appandString)"
+                        let range = (string as NSString).range(of: appandString)
+                      
+                        let attributedString = NSMutableAttributedString(string: string)
+                        attributedString.addAttribute(NSAttributedString.Key.foregroundColor,
+                                                      value: UIColor.lightGray,
+                                                      range: range)
+                        return attributedString;
+        }
     }
 
     

@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "ACLabelCounting"
-  s.version      = "1.0.0"
+  s.version      = "1.1.0"
   s.summary      = "Adds animated counting to UILabel for swift."
   s.description  = <<-DESC
 	a Label support animated counting for swift.
