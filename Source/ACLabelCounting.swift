@@ -26,7 +26,6 @@ enum ACLabelCountingDataType {
     case Double
 }
 
-
 class ACLabelCounting: UILabel {
     
     private var progress: Double = 0
@@ -44,7 +43,7 @@ class ACLabelCounting: UILabel {
     private var formatTextClosure: ((String) -> String) = { text -> String in return text }
     private var attributedTextClosure: ((String) -> NSAttributedString)?
     
-    func updateNumber(value: TimeInterval) {
+    @objc func updateNumber(value: TimeInterval) {
         let now = Date.timeIntervalSinceReferenceDate
         progress += Double(now - self.lastUpdate)
         self.lastUpdate = now
@@ -75,7 +74,7 @@ class ACLabelCounting: UILabel {
         guard displayLink != nil else {
             return
         }
-        displayLink.remove(from: RunLoop.main, forMode: .commonModes)
+        displayLink.remove(from: RunLoop.main, forMode: RunLoop.Mode.common)
         displayLink.invalidate()
         displayLink = nil
     }
@@ -88,7 +87,7 @@ class ACLabelCounting: UILabel {
         } else {
             displayLink.frameInterval = LabelCountingConst.countRate / 35
         }
-        displayLink.add(to: RunLoop.main, forMode: .commonModes)
+        displayLink.add(to: RunLoop.main, forMode: RunLoop.Mode.common)
     }
     
     private func handleText(with: Double, type: ACLabelCountingDataType) -> String {
