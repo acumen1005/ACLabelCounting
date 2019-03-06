@@ -14,23 +14,23 @@ struct LabelCountingConst {
 }
 
 enum ACLabelCountingAnimationType {
-    case None
-    case Liner
-    case EaseIn
-    case EaseOut
-    case EaseInOut
+    case none
+    case linear
+    case easeIn
+    case easeOut
+    case easeInOut
 }
 
 enum ACLabelCountingDataType {
-    case Int
-    case Double
+    case int
+    case double
 }
 
 class ACLabelCounting: UILabel {
     
     private var progress: Double = 0
-    private var dataType: ACLabelCountingDataType = .Int
-    private var animationType: ACLabelCountingAnimationType = .None
+    private var dataType: ACLabelCountingDataType = .int
+    private var animationType: ACLabelCountingAnimationType = .none
     private var duration: TimeInterval = LabelCountingConst.defaultDuration
     private var displayLink: CADisplayLink! = CADisplayLink()
     private var lastUpdate: TimeInterval = Date.timeIntervalSinceReferenceDate
@@ -92,25 +92,23 @@ class ACLabelCounting: UILabel {
     
     private func handleText(with: Double, type: ACLabelCountingDataType) -> String {
         switch type {
-        case .Int:
+        case .int:
             return String(format: "%.0lf", with)
-        default:
+        case .double:
             return String(format: "%.2lf", with)
         }
     }
     
     private func renderScale(type: ACLabelCountingAnimationType) -> Double {
         switch type {
-        case .None:
-            return liner(progress: progress, totle: Double(duration))
-        case .EaseIn:
+        case .none, .linear:
+            return linear(progress: progress, totle: Double(duration))
+        case .easeIn:
             return easeIn(progress: progress, totle: Double(duration))
-        case .EaseOut:
+        case .easeOut:
             return easeOut(progress: progress, totle: Double(duration))
-        case .EaseInOut:
+        case .easeInOut:
             return easeInOut(progress: progress, totle: Double(duration))
-        default:
-            return liner(progress: progress, totle: Double(duration))
         }
     }
     
@@ -158,8 +156,8 @@ class ACLabelCounting: UILabel {
     func count(from fromValue: Double = 0.0,
                to toValue: Double,
                duration time: TimeInterval = LabelCountingConst.defaultDuration,
-               animationType: ACLabelCountingAnimationType = .None,
-               dataType: ACLabelCountingDataType = .Int,
+               animationType: ACLabelCountingAnimationType = .none,
+               dataType: ACLabelCountingDataType = .int,
                formatTextClosure: @escaping (String) -> String = { text -> String in return text }) {
         
         assert((fromValue >= 0 && toValue >= 0), "the fromValue or toValue must be not negative!")
@@ -178,8 +176,8 @@ class ACLabelCounting: UILabel {
     func count(from fromValue: Double = 0.0,
                to toValue: Double,
                duration time: TimeInterval = LabelCountingConst.defaultDuration,
-               animationType: ACLabelCountingAnimationType = .None,
-               dataType: ACLabelCountingDataType = .Int,
+               animationType: ACLabelCountingAnimationType = .none,
+               dataType: ACLabelCountingDataType = .int,
                attributedTextClosure: @escaping (String) -> NSAttributedString) {
         
         self.attributedTextClosure = attributedTextClosure
@@ -192,7 +190,7 @@ class ACLabelCounting: UILabel {
 }
 
 extension ACLabelCounting {
-    func liner(progress: Double, totle: Double) -> Double {
+    func linear(progress: Double, totle: Double) -> Double {
         return progress / totle
     }
     

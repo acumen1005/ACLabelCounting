@@ -20,37 +20,37 @@ pod 'ACLabelCounting'
 ``` swift
 label.count(to: 100)
 ```
-从 10 到 100 的计数动画，持续时间是 5 秒钟，动画类型是渐入效果，数据类型是 .Double 类型。
+从 10 到 100 的计数动画，持续时间是 5 秒钟，动画类型是渐入效果，数据类型是 .double 类型。
 
 ``` swift
 label.count(from: 10,
             to: 100,
             duration: 5,
-            animationType: .EaseIn,
-		    dataType: .Double)
+            animationType: .easeIn,
+		    dataType: .double)
 ```
-从 0 到 100 的计数动画，持续时间是 5 秒钟，动画类型是渐出效果，数据类型是 .Int 类型。字符串格式化是在字符串后面增加一个 `%`。
+从 0 到 100 的计数动画，持续时间是 5 秒钟，动画类型是渐出效果，数据类型是 .int 类型。字符串格式化是在字符串后面增加一个 `%`。
 
 ``` swift
 label.count(from: 0,
             to: 100,
             duration: 5,
-            animationType: .EaseOut,
-            dataType: .Int) { txt in
+            animationType: .easeOut,
+            dataType: .int) { txt in
                 return "\(txt) %"
         }
 ```
-从 0 到 100 的计数动画，持续时间是 5 秒钟，动画类型是渐 入效果，数据类型是 .Int 类型。字符串格式化就是在字符串有面加上 `／ 100` ，它颜色是亮灰色的。
+从 0 到 100 的计数动画，持续时间是 5 秒钟，动画类型是渐 入效果，数据类型是 .int 类型。字符串格式化就是在字符串有面加上 `／ 100` ，它颜色是亮灰色的。
 
 ``` swift
 label.count(from: 0,
                     to: 100,
                     duration: 5,
-                    animationType: .EaseIn,
-                    dataType: .Int) { text -> NSAttributedString in
-                        let appandString = " / 100"
-                        let string = "\(text)\(appandString)"
-                        let range = (string as NSString).range(of: appandString)
+                    animationType: .easeIn,
+                    dataType: .int) { text -> NSAttributedString in
+                        let appendString = " / 100"
+                        let string = "\(text)\(appendString)"
+                        let range = (string as NSString).range(of: appendString)
                         
                         let attributedString = NSMutableAttributedString(string: string)
                         attributedString.addAttribute(NSForegroundColorAttributeName,
@@ -66,19 +66,19 @@ label.count(from: 0,
 
 ``` swift
 enum ACLabelCountingDataType {
-    case Int
-    case Double
+    case int
+    case double
 }
 ```
 数据类型是 Int 或者 Double。
 
 ``` swift
 enum ACLabelCountingAnimationType {
-    case None
-    case Liner
-    case EaseIn
-    case EaseOut
-    case EaseInOut
+    case none
+    case linear
+    case easeIn
+    case easeOut
+    case easeInOut
 }
 ```
 计数动画效果的类型分别是：没有效果（和线性效果一样）、线性效果、渐入效果、渐出效果、渐入渐出效果。他们分别对应的函数是：
