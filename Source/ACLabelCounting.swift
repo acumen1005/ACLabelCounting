@@ -33,7 +33,7 @@ class ACLabelCounting: UILabel {
     private var animationType: ACLabelCountingAnimationType = .None
     private var duration: TimeInterval = LabelCountingConst.defaultDuration
     private var displayLink: CADisplayLink! = CADisplayLink()
-    private var lastUpdate: TimeInterval = Date.timeIntervalSinceReferenceDate
+    private var lastUpdate: TimeInterval = CACurrentMediaTime()
     
     // number
     private var startValue: Double = 0
@@ -44,7 +44,7 @@ class ACLabelCounting: UILabel {
     private var attributedTextClosure: ((String) -> NSAttributedString)?
     
     @objc func updateNumber(value: TimeInterval) {
-        let now = Date.timeIntervalSinceReferenceDate
+        let now = CACurrentMediaTime()
         progress += Double(now - self.lastUpdate)
         self.lastUpdate = now
         
@@ -80,7 +80,7 @@ class ACLabelCounting: UILabel {
     }
     
     private func fireDisplayLink() {
-        lastUpdate = Date.timeIntervalSinceReferenceDate
+        lastUpdate = CACurrentMediaTime()
         displayLink = CADisplayLink(target: self, selector: #selector(updateNumber))
         if #available(iOS 10, *) {
             displayLink.preferredFramesPerSecond = LabelCountingConst.countRate
@@ -124,7 +124,7 @@ class ACLabelCounting: UILabel {
     }
     
     func restore() {
-        self.lastUpdate = Date.timeIntervalSinceReferenceDate
+        self.lastUpdate = CACurrentMediaTime()
         fireDisplayLink()
     }
     

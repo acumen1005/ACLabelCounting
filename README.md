@@ -118,7 +118,7 @@ ACLabelCountting 有 5 个基本操作分别是：
 
 ``` swift
 private func fireDisplayLink() {
-        lastUpdate = Date.timeIntervalSinceReferenceDate
+        lastUpdate = CACurrentMediaTime()
         displayLink = CADisplayLink(target: self, selector: #selector(updateNumber))
         displayLink.preferredFramesPerSecond = LabelCountingConst.countRate
         displayLink.add(to: RunLoop.main, forMode: .commonModes)
