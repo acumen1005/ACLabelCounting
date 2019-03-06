@@ -21,8 +21,8 @@ class ViewController: UIViewController {
 //        label.count(from: 0,
 //                    to: 100,
 //                    duration: 5,
-//                    animationType: .EaseIn,
-//                    dataType: .Double) { txt in
+//                    animationType: .easeIn,
+//                    dataType: .double) { txt in
 //                return "\(txt) %"
 //        }
       
@@ -30,11 +30,11 @@ class ViewController: UIViewController {
         label.count(from: 0,
                     to: 100,
                     duration: 5,
-                    animationType: .EaseIn,
-                    dataType: .Int) { text -> NSAttributedString in
-                        let appandString = " / 100"
-                        let string = "\(text)\(appandString)"
-                        let range = (string as NSString).range(of: appandString)
+                    animationType: .easeIn,
+                    dataType: .int) { text -> NSAttributedString in
+                        let appendString = " / 100"
+                        let string = "\(text)\(appendString)"
+                        let range = (string as NSString).range(of: appendString)
                       
                         let attributedString = NSMutableAttributedString(string: string)
                         attributedString.addAttribute(NSAttributedString.Key.foregroundColor,
