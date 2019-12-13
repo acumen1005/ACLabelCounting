@@ -1,4 +1,7 @@
 # ACLabelCounting
+
+[中文版](./readME_CN.md)
+
 Adds animated counting to UILabel for swift
 
 ![](ACLabelCounting.gif)
@@ -10,28 +13,31 @@ To integrate ACLabelCounting into your Xcode project using CocoaPods, specify it
 ```swift
 
 pod 'ACLabelCounting'
-
 ```
 
 ## Usage
-初始化一个 ACLabelCounting 对象就可以直接调用 `count` 方法。
-普通的从 0 到 100 的计数动画，动画是线性的，数据类型是整数类型，没有格式化字符串。  
 
-``` swift
+You can initialize an ACLabelCounting, and call mehtod `count` , then you get an animated counting label
+
+Linear animation of counts from 0 to 100, data type is integer
+
+```swift
 label.count(to: 100)
 ```
-从 10 到 100 的计数动画，持续时间是 5 秒钟，动画类型是渐入效果，数据类型是 .Double 类型。
 
-``` swift
+Count animation from 10 to 100. Duration is 5 seconds. Animation type is fade-in effect. Data type is Double.
+
+```swift
 label.count(from: 10,
             to: 100,
             duration: 5,
             animationType: .EaseIn,
-		    dataType: .Double)
+            dataType: .Double)
 ```
-从 0 到 100 的计数动画，持续时间是 5 秒钟，动画类型是渐出效果，数据类型是 .Int 类型。字符串格式化是在字符串后面增加一个 `%`。
 
-``` swift
+Counting animation from 0 to 100, duration is 5 seconds, animation type is fade-out effect, data type is Int type. String formatting adds a `%` to the end of the string.
+
+```swift
 label.count(from: 0,
             to: 100,
             duration: 5,
@@ -40,9 +46,10 @@ label.count(from: 0,
                 return "\(txt) %"
         }
 ```
-从 0 到 100 的计数动画，持续时间是 5 秒钟，动画类型是渐 入效果，数据类型是 .Int 类型。字符串格式化就是在字符串有面加上 `／ 100` ，它颜色是亮灰色的。
 
-``` swift
+Count animation from 0 to 100. Duration is 5 seconds. Animation type is fade-in effect. Data type is Int. String formatting is to add `/ 100` to the string face, and its color is bright gray.
+
+```swift
 label.count(from: 0,
                     to: 100,
                     duration: 5,
@@ -51,28 +58,31 @@ label.count(from: 0,
                         let appandString = " / 100"
                         let string = "\(text)\(appandString)"
                         let range = (string as NSString).range(of: appandString)
-                        
+
                         let attributedString = NSMutableAttributedString(string: string)
                         attributedString.addAttribute(NSForegroundColorAttributeName,
                                                       value: UIColor.lightGray,
                                                       range: range)
                         return attributedString;
         }
-
 ```
-暂时只有这么的多的功能，如果你还想增加更强大的功能或者效果，欢迎发 issue。
- 
+
+That's all. If you want to add more powerful features, please post an issue for me.
+
 ## Source Analytics
 
-``` swift
+the enum of datatype
+
+```swift
 enum ACLabelCountingDataType {
     case Int
     case Double
 }
 ```
-数据类型是 Int 或者 Double。
 
-``` swift
+the types of counting animation : no effect (same as linear), linear, fade-in, fade-out, fade-in. 
+
+```swift
 enum ACLabelCountingAnimationType {
     case None
     case Liner
@@ -81,32 +91,32 @@ enum ACLabelCountingAnimationType {
     case EaseInOut
 }
 ```
-计数动画效果的类型分别是：没有效果（和线性效果一样）、线性效果、渐入效果、渐出效果、渐入渐出效果。他们分别对应的函数是：
 
-``` swift
+Their corresponding functions:
+
+```swift
 extension ACLabelCounting {
     func liner(progress: Double, totle: Double) -> Double {
         return progress / totle
     }
-    
+
     func easeIn(progress: Double, totle: Double) -> Double {
         return pow(progress / totle, 3)
     }
-    
+
     func easeOut(progress: Double, totle: Double) -> Double {
         let t = progress / totle
         return  1 - pow(1 - t, 3)
     }
-    
+
     func easeInOut(progress: Double, totle: Double) -> Double {
         let t = progress / totle
         return t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1
     }
 }
 ```
-`progress` 表示计数的进度，`totle` 表示 fromValue 到 toValue 所设置的时间。
 
-ACLabelCountting 有 5 个基本操作分别是：
+ACLabelCountting has 5 operations：
 
 - start()
 - pause()
@@ -114,9 +124,9 @@ ACLabelCountting 有 5 个基本操作分别是：
 - stop()
 - reset()
 
-关键使用 `CADisplayLink` 定时器以每秒 35 次的频率执行 `updateNumber` 任务，并且以 .commonModes 模式加入到 Runloop 中。
+The key is to use the `CADisplayLink` timer to execute the `updateNumber` task at a rate of 35 times per second and add it to the Runloop in .commonModes mode.
 
-``` swift
+```swift
 private func fireDisplayLink() {
         lastUpdate = Date.timeIntervalSinceReferenceDate
         displayLink = CADisplayLink(target: self, selector: #selector(updateNumber))
@@ -125,14 +135,15 @@ private func fireDisplayLink() {
     }
 ```
 
-它有两个简单的自定义闭包：`formatTextClosure`、`attributedTextClosure`。你可以自己实现对字符串的处理。它都将显示在你的屏幕上。
+It has two simple custom closures: `formatTextClosure` and `attributedTextClosure`. You can implement string processing yourself. It will all appear on your screen.
 
-``` swift
+```swift
 private var formatTextClosure: ((String) -> String) = { text -> String in return text }
 
 private var attributedTextClosure: ((String) -> NSAttributedString)?
 ```
-## Thanks
-https://github.com/dataxpress/UICountingLabel  
-严格来说是该 repo 的 swift 版。感恩～
 
+## Thanks
+
+https://github.com/dataxpress/UICountingLabel  
+it is a repo for swift. Thanks ~
