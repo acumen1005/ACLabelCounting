@@ -128,7 +128,7 @@ The key is to use the `CADisplayLink` timer to execute the `updateNumber` task a
 
 ```swift
 private func fireDisplayLink() {
-        lastUpdate = Date.timeIntervalSinceReferenceDate
+        lastUpdate = CACurrentMediaTime()
         displayLink = CADisplayLink(target: self, selector: #selector(updateNumber))
         displayLink.preferredFramesPerSecond = LabelCountingConst.countRate
         displayLink.add(to: RunLoop.main, forMode: .commonModes)
